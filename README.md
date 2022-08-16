@@ -1,3 +1,3 @@
-# pic2art
+# Pic2Art
 
-This application is to learn neural style transfer 
+This application is to learn neural style transfer.
