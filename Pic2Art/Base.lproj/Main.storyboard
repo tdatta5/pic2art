@@ -38,6 +38,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Select Image">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="presentPickerForImages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAf-y1-74L"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -57,9 +60,12 @@
                                                     <constraint firstAttribute="height" constant="50" id="WsB-Sz-hEy"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Select Painting">
+                                                <buttonConfiguration key="configuration" style="filled" title="Select Style">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="presentPickerForStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w77-vX-kso"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -71,7 +77,7 @@
                                     <constraint firstAttribute="height" constant="100" id="AfP-Oe-D4G"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Style Image!">
+                                <buttonConfiguration key="configuration" style="filled" title="Transfer Style">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
                             </button>
@@ -89,6 +95,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GRd-fS-uEC"/>
+                    <connections>
+                        <outlet property="selectedImageOutlet" destination="I4K-Ud-3Gi" id="C3c-pT-FJs"/>
+                        <outlet property="selectedStyleOutlet" destination="mUG-1D-4zu" id="pVm-ib-csM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
