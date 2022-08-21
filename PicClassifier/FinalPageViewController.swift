@@ -9,18 +9,17 @@ import UIKit
 
 class FinalPageViewController: UIViewController {
     
-    @IBOutlet weak var finalImageView: UIImageView!
+
     
     @IBOutlet weak var finalLabel: UILabel!
     
     let imagePredictor = ImagePredictor()
     
     var image: UIImage!
-    var style: UIImage!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        finalImageView.image = image
         finalLabel.text = "Making prediction..."
         makePrediction(image:image)
     
@@ -49,7 +48,7 @@ class FinalPageViewController: UIViewController {
         updatePredictionLabel(predictionString)
     }
     /// The largest number of predictions the main view controller displays the user.
-    let predictionsToShow = 1
+    let predictionsToShow = 3
     
     /// Converts a prediction's observations into human-readable strings.
     /// - Parameter observations: The classification observations from a Vision request.

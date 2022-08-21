@@ -13,6 +13,7 @@
 		A637081628A491EA0023A560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A637081428A491EA0023A560 /* Main.storyboard */; };
 		A637081828A491EB0023A560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A637081728A491EB0023A560 /* Assets.xcassets */; };
 		A637081B28A491EB0023A560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A637081928A491EB0023A560 /* LaunchScreen.storyboard */; };
+		A67C4CE628B2D22F006CFB4C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A67C4CE528B2D22F006CFB4C /* README.md */; };
 		A6E0EDCA28B2A78F00B82493 /* FinalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0EDC928B2A78F00B82493 /* FinalPageViewController.swift */; };
 		A6E0EDCC28B2BA7600B82493 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0EDCB28B2BA7600B82493 /* ImagePredictor.swift */; };
 		A6E0EDCE28B2BAB600B82493 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A6E0EDCD28B2BAB600B82493 /* MobileNetV2.mlmodel */; };
@@ -21,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A637080B28A491EA0023A560 /* Pic2Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pic2Art.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A637080B28A491EA0023A560 /* PicClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A637080E28A491EA0023A560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A637081028A491EA0023A560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A637081228A491EA0023A560 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +30,7 @@
 		A637081728A491EB0023A560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A637081A28A491EB0023A560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A637081C28A491EB0023A560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67C4CE528B2D22F006CFB4C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A6E0EDC928B2A78F00B82493 /* FinalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPageViewController.swift; sourceTree = "<group>"; };
 		A6E0EDCB28B2BA7600B82493 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		A6E0EDCD28B2BAB600B82493 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		A637080228A491EA0023A560 = {
 			isa = PBXGroup;
 			children = (
-				A637080D28A491EA0023A560 /* Pic2Art */,
+				A637080D28A491EA0023A560 /* PicClassifier */,
 				A637080C28A491EA0023A560 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,14 +60,15 @@
 		A637080C28A491EA0023A560 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A637080B28A491EA0023A560 /* Pic2Art.app */,
+				A637080B28A491EA0023A560 /* PicClassifier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A637080D28A491EA0023A560 /* Pic2Art */ = {
+		A637080D28A491EA0023A560 /* PicClassifier */ = {
 			isa = PBXGroup;
 			children = (
+				A67C4CE528B2D22F006CFB4C /* README.md */,
 				A6E0EDCD28B2BAB600B82493 /* MobileNetV2.mlmodel */,
 				A6E0EDCB28B2BA7600B82493 /* ImagePredictor.swift */,
 				A637080E28A491EA0023A560 /* AppDelegate.swift */,
@@ -79,15 +82,15 @@
 				A6E0EDCF28B2BC7400B82493 /* CGImageProperty.swift */,
 				A6E0EDD128B2BCA500B82493 /* VNClassification.swift */,
 			);
-			path = Pic2Art;
+			path = PicClassifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A637080A28A491EA0023A560 /* Pic2Art */ = {
+		A637080A28A491EA0023A560 /* PicClassifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A637081F28A491EB0023A560 /* Build configuration list for PBXNativeTarget "Pic2Art" */;
+			buildConfigurationList = A637081F28A491EB0023A560 /* Build configuration list for PBXNativeTarget "PicClassifier" */;
 			buildPhases = (
 				A637080728A491EA0023A560 /* Sources */,
 				A637080828A491EA0023A560 /* Frameworks */,
@@ -97,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = Pic2Art;
+			name = PicClassifier;
 			productName = Pic2Art;
-			productReference = A637080B28A491EA0023A560 /* Pic2Art.app */;
+			productReference = A637080B28A491EA0023A560 /* PicClassifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A637080628A491EA0023A560 /* Build configuration list for PBXProject "Pic2Art" */;
+			buildConfigurationList = A637080628A491EA0023A560 /* Build configuration list for PBXProject "PicClassifier" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A637080A28A491EA0023A560 /* Pic2Art */,
+				A637080A28A491EA0023A560 /* PicClassifier */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +145,7 @@
 			files = (
 				A637081B28A491EB0023A560 /* LaunchScreen.storyboard in Resources */,
 				A637081828A491EB0023A560 /* Assets.xcassets in Resources */,
+				A67C4CE628B2D22F006CFB4C /* README.md in Resources */,
 				A637081628A491EA0023A560 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,13 +311,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7JJWYNYPL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pic2Art/Info.plist;
+				INFOPLIST_FILE = PicClassifier/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PicClassifier;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed for taking a picture.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +331,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,13 +342,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7JJWYNYPL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pic2Art/Info.plist;
+				INFOPLIST_FILE = PicClassifier/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PicClassifier;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed for taking a picture.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,14 +362,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A637080628A491EA0023A560 /* Build configuration list for PBXProject "Pic2Art" */ = {
+		A637080628A491EA0023A560 /* Build configuration list for PBXProject "PicClassifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A637081D28A491EB0023A560 /* Debug */,
@@ -366,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A637081F28A491EB0023A560 /* Build configuration list for PBXNativeTarget "Pic2Art" */ = {
+		A637081F28A491EB0023A560 /* Build configuration list for PBXNativeTarget "PicClassifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A637082028A491EB0023A560 /* Debug */,

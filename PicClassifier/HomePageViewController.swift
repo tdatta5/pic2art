@@ -10,6 +10,10 @@ import Photos
 import PhotosUI
 
 class HomePageViewController: UIViewController, PHPickerViewControllerDelegate {
+    @IBAction func selectImage(_ sender: Any) {
+        presentPicker(filter: PHPickerFilter.images)
+        selectionType = .image
+    }
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true)
         
@@ -17,45 +21,31 @@ class HomePageViewController: UIViewController, PHPickerViewControllerDelegate {
                result.itemProvider.loadObject(ofClass: UIImage.self) { reading, error in
                    guard let image = reading as? UIImage, error == nil else { return }
                    DispatchQueue.main.async {
-                       if self.selectionType == .image {
-                           self.selectedImageOutlet.image = image
-                       } else {
-                           self.selectedStyleOutlet.image = image
-                       }
+                       self.selectedImageOutlet.image = image
                    }
                }
         }
     }
 
-    @IBAction func onTransferClick(_ sender: Any) {
-        
-    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
         
         let destinationVC = segue.destination as! FinalPageViewController
         destinationVC.image = selectedImageOutlet.image
-        destinationVC.style = selectedStyleOutlet.image
+        
     
     }
     
     @IBOutlet weak var selectedImageOutlet: UIImageView!
-    @IBOutlet weak var selectedStyleOutlet: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func presentPickerForImages(_ sender: Any) {
-        presentPicker(filter: PHPickerFilter.images)
-        selectionType = .image
-    }
     
-    @IBAction func presentPickerForStyle(_ sender: Any) {
-        presentPicker(filter: PHPickerFilter.images)
-        selectionType = .style
-    }
     
     enum SelectionType {
         case image
