@@ -26,7 +26,19 @@ class HomePageViewController: UIViewController, PHPickerViewControllerDelegate {
                }
         }
     }
+
+    @IBAction func onTransferClick(_ sender: Any) {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+        
+        let destinationVC = segue.destination as! FinalPageViewController
+        destinationVC.image = selectedImageOutlet.image
+        destinationVC.style = selectedStyleOutlet.image
+    
+    }
     
     @IBOutlet weak var selectedImageOutlet: UIImageView!
     @IBOutlet weak var selectedStyleOutlet: UIImageView!
